@@ -1,0 +1,30 @@
+
+body{
+    background-color: white;
+    margin: 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    background-color: rgb(65, 68, 68);
+    width: 100%;  /* 100% to take full width of the screen */
+    height: 50px;
+    padding-left: 300px;  /* Control the left margin of the content */
+    box-sizing: border-box;  /* Ensures padding is included in the width */
+}
+
+/* Style for the search icon */
+.search-icon {
+    color: white;
+    margin-left: 20px;
+    cursor: pointer; /* Makes the icon look clickable */
+}
+
+
+.store-text {
+    color: white;
+    margin-left: 40px;
+    position: relative;
+}
+
