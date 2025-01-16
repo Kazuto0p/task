@@ -1,8 +1,11 @@
+*{
+    margin: 0;
+}
 .section1 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    /* grid-template-columns: repeat(3, 1fr); Three equal columns */
     gap: 1em; /* Adds space between each section */
-    padding: 1em;
+    /* padding: 1em; */
 }
 
 @media screen and (max-width: 400px) {
@@ -42,17 +45,14 @@
 }
 
 .grid {
-    padding: 2em;
+
     height: 80vh;
     width: 100vw;
     display: grid;
-    /* gap: 1em; Added spacing between items */
-    /* border: 1px solid grey;
-    background-color: aqua; */
     background-position: center;
     overflow: hidden;
     position: relative;
-    /* margin-bottom: 5px; */
+
     
 }
 
@@ -63,13 +63,7 @@
 }
 
 .img6 {
-   
-    /* width: 50%;
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;*/
+
     width: 100%;
     display: flex;
     gap: 10px;
@@ -78,18 +72,17 @@
 } 
 
 .img6 img {
-    width: 100%; /* Scale image to fit width */
-    /* height: 100%; Scale image to fit height */
+    width: 100%;
     display: flex;
-    object-fit: cover; /* Maintains image aspect ratio */
+    object-fit: cover;
     gap: 10px;
 }
 .sector1{
 
     background-image: url("hero_iphone16pro_avail__fnf0f9x70jiy_large.jpg");
-    /* background-repeat: no-repeat; */
+
     gap: 10px;
-        /* margin: 3px; */
+
 }
 .sector2{
     background-image: url("hero_iphone16_avail__euwzls69btea_large.jpg");
