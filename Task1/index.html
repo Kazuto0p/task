@@ -6,79 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="main.js"></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <link rel="stylesheet" href="carousel.css">
     <style>
-        .child{
-
-            width: 100%;
-            height: 30vh;
+        /* Slideshow container */
+        .slideshow-container {
             position: relative;
-            top: -7%;
-            /* left: 60%;
-            transform: translate(-50%, -50%); */
-            font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            color: white;
-            font-weight: 600;
-            font-size: 48px;
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-            flex-shrink: 1;
+            max-width: 100%; /* Full width */
+            margin: auto; /* Center the slideshow */
+            overflow: hidden; /* Hide overflowing content */
         }
-        .subhead{
-            font-size: 24px;
-            font-weight: 400;
+
+        /* Individual slides */
+        .slide {
+            display: none; /* Hide all slides by default */
+            position: absolute;
+            width: 100%; /* Full width */
         }
-        .butn{
-            position: relative;
-            top: -120%;
-            left: 50%;
-            transform: translate(-10%);
-            
 
+        /* Images inside slides */
+        .slide img {
+            width: 100%; /* Full-width images */
+            height: auto; /* Maintain aspect ratio */
         }
-        .b1{
-            font-size: 17px;
-            font-weight: 400;
-            letter-spacing: -.022em;
-            font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-            background-color: #0e77ff;
-            color: #ffffff;
-            font-style: normal;
-            border-radius: 20PX;
-            height: 46px;
-            width: 140px;
+
+        /* Fading animation for slides */
+        .fade {
+            animation: fadeEffect 1.5s ease-in-out; /* Fading effect */
         }
-        .b2{
-           
-    width: 90px;
-    height: 50px;
-    background-color: rgba(47, 94, 47, 0);
-    color: white;
-    font-size: 18px;
-    text-align: center;
-    border: 2px solid #0e77ff;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease; 
-}
 
-
-.b2:hover {
-    background-color:  #0e77ff;
-    
-}
-            
-
+        @keyframes fadeEffect {
+            from {
+                opacity: 0.4;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+   
    
 
-    </style>
 
 
 </head>
@@ -114,17 +84,84 @@
                 </div>
 
             </div>
-            <div class="grid sector2 "></div>
-            <div class="grid sector3 "></div>
+            <div class="grid sector2 ">
+                <div class="child">
+                    <h3>iPhone 16 Pro</h3>
+                    <p class="subhead">Hello,Apple Intelligence.</p>
+                </div>
+                <div class="butn">
+                  <button class="bt1">Learn more</button> <button class="bt2">Buy</button>
+                 
+                </div>
+            </div>
+            <div class="grid sector3 ">
+                <div class="image">
+                    <img src="img/hero_logo_apple_watch_series_10__dla4dkv1wfue_largetall.png" alt="">
+                    <p class="watch">Thinstant Classic.</p>
+                </div>
+                <div class="buttn">
+                    <button class="bw1">Learn more</button> <button class="bw2">Buy</button>
+                   
+                  </div>
+            </div>
         </div>
         <div class="col">
-            <div class="img6" ><img src="https://www.apple.com/v/home/by/images/promos/apple-fitness-plus/promo_apple_fitness_plus__fvrnctwbcgqe_medium_2x.jpg" alt=""></div>
+            <div class="img6" >
+                <img src="img/promo_apple_fitness_plus__fvrnctwbcgqe_large.jpeg" alt="">
+                <div class="fitness"><img src="img/promo_logo_fitness__ghrl68mizmqi_large.png" alt=""></div>
+                <p class="fp">Fitnes for everyone.</br> Personalized for you.</p>
+                <p class="fp2">Get up to 3 months on us.</p>
+            </div>
             <div class="img6"><img src="https://www.apple.com/v/home/by/images/promos/ipad-air/promo_ipadair_ai__3fv1eitzqv6y_medium.jpg" alt=""></div>
             <div class="img6"><img src="https://www.apple.com/v/home/by/images/promos/macbook-pro/promo_macbookpro_announce__gdf98j6tj2ie_medium.jpg" alt=""></div>
             <div class="img6"><img src="https://www.apple.com/v/home/by/images/promos/apple-watch-ultra-2/promo_apple_watch_ultra2_avail__dyawbjw9cowi_medium.jpg"  alt=""></div>
             <div class="img6"><img src="https://www.apple.com/v/home/by/images/promos/iphone-tradein/promo_iphone_tradein__bugw15ka691e_medium.jpg"  alt=""></div>
             <div class="img6 "><img src="https://www.apple.com/v/home/by/images/promos/apple-card/promo_apple_card__5cm7draujpey_medium.jpg"  alt=""></div>
         </div>
+        <!-- Autoplay won't start if the viewport height is not large enough to show the entire carousel due to Intersection Observer -->
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="https://via.placeholder.com/1200x600?text=Image+1" alt="Image 1">
+            </div>
+            <div class="slide fade">
+                <img src="https://via.placeholder.com/1200x600?text=Image+2" alt="Image 2">
+            </div>
+            <div class="slide fade">
+                <img src="https://via.placeholder.com/1200x600?text=Image+3" alt="Image 3">
+            </div>
+            <div class="slide fade">
+                <img src="https://via.placeholder.com/1200x600?text=Image+4" alt="Image 4">
+            </div>
+        </div>
+    
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                let currentIndex = 0;
+    
+                const showSlides = () => {
+                    const slides = document.getElementsByClassName("slide");
+                    
+                    // Hide all slides
+                    for (let i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+    
+                    // Increment index
+                    currentIndex++;
+                    if (currentIndex > slides.length) {
+                        currentIndex = 1; // Reset to the first slide
+                    }
+    
+                    // Show the current slide
+                    slides[currentIndex - 1].style.display = "block";
+                };
+    
+                // Start the slideshow
+                setInterval(showSlides, 3000); // Change slide every 3 seconds
+                showSlides(); // Show the first slide immediately
+            });
+        </script>
+        
         <div class="para">
             <p>
 

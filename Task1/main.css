@@ -63,13 +63,36 @@
 }
 
 .img6 {
-
+    position: relative;
     width: 100%;
     display: flex;
     gap: 10px;
 
 
 } 
+.fitness {
+    width: 100px; /* Adjust width */
+    height: 100px; /* Adjust height */
+    position: absolute;
+    display: flex;
+    justify-content: center; /* Allows precise positioning */
+    align-self:center;
+    /* transform: scale(1.2);  */
+}
+.fp {
+    font-size: 1.2rem; /* Adjust text size */
+    color: #333; /* Dark gray color */
+    font-weight: 600; /* Bold text */
+    margin-top: 15px; /* Space between image and text */
+    line-height: 1.5; /* Increases line spacing */
+}
+
+.fp2 {
+    font-size: 1rem; /* Slightly smaller font */
+    color: #007aff; /* Apple blue color */
+    margin-top: 10px; /* Space between the first paragraph and this text */
+    font-weight: 500; /* Medium weight text */
+}
 
 .img6 img {
     width: 100%;
@@ -77,6 +100,10 @@
     object-fit: cover;
     gap: 10px;
 }
+
+/* .apple1{
+    background-image: url("img/promo_apple_fitness_plus__fvrnctwbcgqe_large.jpeg") 
+} */
 .sector1{
 
     background-image: url("hero_iphone16pro_avail__fnf0f9x70jiy_large.jpg");
@@ -94,7 +121,7 @@
     
 }
 .sector3{
-    background-image: url("hero_macbook_air_m3__cp4t7pn8zqaa_large.jpg");
+    background-image: url("img/hero_apple_watch_series_10_avail_lte__esu66gaw6dci_largetall.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     margin: 3px;

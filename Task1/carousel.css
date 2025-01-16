@@ -1,0 +1,34 @@
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    max-width: 100%; /* Full width */
+    margin: auto; /* Center the slideshow */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+/* Individual slides */
+.slide {
+    display: none; /* Hide all slides by default */
+    position: absolute;
+    width: 100%; /* Full width */
+}
+
+/* Images inside slides */
+.slide img {
+    width: 100%; /* Full-width images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Fading animation for slides */
+.fade {
+    animation: fadeEffect 1.5s ease-in-out; /* Fading effect */
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
